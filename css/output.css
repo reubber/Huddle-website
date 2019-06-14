@@ -1,0 +1,279 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+/* variaveis */
+/* Estilos gerais */
+body {
+  background-color: #f7f9fd;
+  overflow-x: hidden;
+}
+
+.heading {
+  color: #00252e;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2.heading {
+  font-size: 31px;
+}
+
+h3.heading {
+  font-size: 1.8em;
+}
+
+h4.heading {
+  font-size: 20px;
+}
+
+.paragraph {
+  font: 18px "Open Sans", sans-serif;
+  color: #808d99;
+  margin-bottom: 20px;
+}
+
+section {
+  width: 95%;
+  margin: 0px 50px 0px 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5vh 3%;
+  position: absolute;
+}
+header .logo-marca {
+  left: 0;
+  max-width: 100%;
+  height: auto;
+}
+header button {
+  right: 0;
+  width: 150px;
+  background-color: white;
+  color: #ad5cff;
+  border-radius: 3px;
+  border: 1px #ff5cbb solid;
+  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro - Background e formas */
+.svg-corner {
+  position: absolute;
+  z-index: -1;
+}
+
+.svg-corner rect {
+  transform: translateX(50%) rotate(-35deg);
+}
+
+.svg-intro {
+  fill: white;
+  position: absolute;
+  z-index: -2;
+}
+
+.svg-intro rect {
+  transform: translateY(50%) translateX(10%) rotate(-35deg);
+}
+
+.intro .section-content {
+  text-align: center;
+}
+
+.intro img {
+  width: inherit;
+}
+
+button.get-started {
+  background-color: #ff5cbb;
+  color: #f7f9fd;
+  width: 200px;
+  height: 50px;
+  align-self: center;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+/* Intro Styles */
+.intro {
+  padding: 50px 25%;
+  margin-top: 0px;
+  justify-content: center;
+  width: 100%;
+}
+.intro .section-content {
+  text-align: center;
+}
+.intro img {
+  margin-top: 32%;
+  width: inherit;
+}
+
+/* Media/Content Section */
+.half-img-half-text {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 5%;
+  margin-top: 160px;
+}
+.half-img-half-text .section-image {
+  flex-basis: 50%;
+  display: flex;
+  width: inherit;
+  height: auto;
+  background-image: url("../images/illustration-your-users.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.half-img-half-text .section-content {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.call-to-action {
+  height: 60vh;
+  padding: 70px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.call-to-action .section-content {
+  margin-bottom: 0;
+  width: inherit;
+  height: inherit;
+  max-width: 800px;
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  align-self: center;
+  box-shadow: 0px 10px 20px 15px rgba(0, 0, 0, 0.1);
+}
+
+/*footer no final da pag */
+footer {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  bottom: 0;
+  padding: 0 50px;
+  color: #f7f9fd;
+  background-color: #00252e;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+footer .social-icons {
+  margin-bottom: 25px;
+}
+
+i {
+  margin-right: 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(38, 21, 185, 0.808);
+}
+
+.grid-header {
+  grid-column: 1/3;
+  grid-row: 1;
+  display: flex;
+}
+.grid-header img {
+  align-self: flex-end;
+  margin: 20px 0 10px 0;
+  width: 132px;
+  height: 33;
+}
+
+.grid-left {
+  grid-column: 1;
+  grid-row: 2/3;
+  bottom: 0;
+}
+.grid-left .copyright {
+  font: 10px "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.grid-mid {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+}
+.grid-mid nav li {
+  margin-bottom: 20px;
+  font: 12px "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.grid-right {
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+}
+.grid-right h5 {
+  font: 18px Poppins, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.grid-right input {
+  width: 100%;
+  height: 3em;
+  border-radius: 5px;
+}
+.grid-right .paragraph {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+button.subscribe {
+  background-color: #ff5cbb;
+  color: #f7f9fd;
+  width: 150px;
+  height: 40px;
+  float: right;
+  margin: 5px;
+  margin-right: 0;
+  border-radius: 3px;
+  font: 12px "Open Sans", sans-serif;
+  font-weight: 400;
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=output.css.map */
