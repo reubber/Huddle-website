@@ -1,5 +1,6 @@
 # Huddle-website
-Uma single page aplication do desafio proposto da cadeira de desenvolvimento web da UFC e do site frontend mentor. Com a finalidade de praticar os fundamentos sobre estilização com css.
+
+A challenge to create a single page application from program [frontendmentor](https://www.frontendmentor.io) proposed in the web development discipline of my undergraduate degree at ufc 2019. With the aim of practicing the fundamentals of styling with css.
 
 ### DESKTOP version
 
